@@ -51,7 +51,7 @@
           <li class="item">
             <a href="tel:+380961111111" class="contact-link">
               <svg width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone" ></use>
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 (096) 111 11 11</a
             >
@@ -63,8 +63,8 @@
       <!--Герой-->
       <section class="hero-back">
         <div class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--Особливості-->
@@ -72,30 +72,30 @@
         <div class="conteiner">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list personal-item">
-              <li class="text">
-                <h3 class="personal-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="personal-text">
-                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                </p>
-              </li>
-              <li class="text">
-                <h3 class="personal-title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="personal-text">
-                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </p>
-              </li>
-              <li class="text diagram">
-                <h3 class="personal-title">ПЛАНУВАННЯ</h3>
-                <p class="personal-text">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
-              </li>
-              <li class="text astronaut">
-                <h3 class="personal-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="personal-text">
-                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </p>
-              </li>
+            <li class="text">
+              <h3 class="personal-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="personal-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="text">
+              <h3 class="personal-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="personal-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="text diagram">
+              <h3 class="personal-title">ПЛАНУВАННЯ</h3>
+              <p class="personal-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="text astronaut">
+              <h3 class="personal-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="personal-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
@@ -104,29 +104,32 @@
         <div class="conteiner">
           <h2 class="sections-name">Чим ми займаємося</h2>
           <ul class="list img-services">
-            <li>
+            <li class="img-text">
               <img
                 src="./images/what_do_we_do/box1.jpg"
                 alt="Десктопні додатки"
                 width="370"
                 height="294"
               />
+              <p class="sections-text">Десктопні додатки</p>
             </li>
-            <li>
+            <li class="img-text">
               <img
                 src="./images/what_do_we_do/box2.jpg"
                 alt="Мобільні додатки"
                 width="370"
                 height="294"
               />
+              <p class="sections-text">Мобільні додатки</p>
             </li>
-            <li>
+            <li class="img-text">
               <img
                 src="./images/what_do_we_do/box3.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
                 height="294"
               />
+              <p class="sections-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -514,5 +517,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img src="./images/close.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
